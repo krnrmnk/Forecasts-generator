@@ -48,5 +48,5 @@ function addNewForecast(predictionText, eventProbability) {
     forecastItem.querySelector('h3').textContent = predictionText;
     forecastItem.querySelector('p').textContent = `Вероятность: ${eventProbability}%`;
 
-    return forecastList.prepend(forecastItem);
+    forecastList.prepend(forecastItem);
 }
